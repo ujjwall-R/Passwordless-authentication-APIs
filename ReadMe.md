@@ -29,6 +29,7 @@ Create a .env file with following template:
 ```bash
 SENDGRID_API_KEY=""
 MONGODB_URL=""
+SENDEREMAIL=""
 ```
 
 Deploy the node app on any cloud service.
