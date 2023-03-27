@@ -8,13 +8,12 @@ sgMail.setApiKey(sendgridAPIkey);
 const sendOTP = (email, otp) => {
   sgMail.send({
     to: email,
-    from: "ujjwal@makemybrain.com",
-    subject: `Ujjwal From MakeMyBrain | OTP`,
+    from: process.env.SENDEREMAIL,
+    subject: `Email Subject`,
     text: `Your one time password is - ${otp}.`,
   });
 };
 
-// sendOTP("binaybhattacharya558@gmail.com", "Ujjwal");
 
 module.exports = {
   sendOTP,
